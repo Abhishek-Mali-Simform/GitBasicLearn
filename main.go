@@ -128,8 +128,8 @@ func main() {
 	defer showEmplyees()
 	defer fmt.Println("Showing Records In DB")
 	var choice int
-	var yN string = "y"
-	for yN == "y" || yN == "Y" {
+	var check string = "y"
+	for check == "y" || check == "Y" {
 		fmt.Println("======MENU======")
 		fmt.Println("1. Show all Employee Details.")
 		fmt.Println("2. Show Employee Detail.")
@@ -139,6 +139,6 @@ func main() {
 		input("Your Choice", &choice)
 		menu(choice)
 		fmt.Printf("Do you want to continue:")
-		fmt.Scan(&yN)
+		fmt.Scan(&check)
 	}
 }
